@@ -83,7 +83,7 @@ header {
     border-radius: 10px;
 }
 
-#source-link {
+#source-link { /* Code source styling */
     color: rgb(82, 82, 100);
     font-weight: bold;
     text-shadow: 1px 1px 0px white, 0 0 20px gold;
