@@ -8,8 +8,8 @@
 - [x] Completed the west and east egg base look 
 - [x] Completed Gatsby, Nick and Buchanan mansions page
 - [ ] Completed the 4 characters that match the mansions
-- [ ] Completed the valley of ashes section
-- [ ] Completed georges garage
+- [x] Completed the valley of ashes section
+- [x] Completed georges garage
 - [ ] Finalized the code to make sure it fits final checklist
 - [ ] Project submitted
 - [ ] Project graded
