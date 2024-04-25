@@ -4,6 +4,7 @@
         <script src="/scripts/script.js"></script>
         <link rel="stylesheet" href="/styles/style.css">
         <title>| Interactive Map</title>
+        <link rel="icon" href="/images/site-logo.ico">
     </head>
     <body> <!-- Body Setup -->
         <div id="page-container"> <!-- Page Container for page alignment -->
@@ -11,18 +12,20 @@
                 <div class="info-banners">
                     <h1 id="title-text">Interactive Gatsby Map</h1>
                 </div>
+                <!-- Banner used to link the source code and promote github for the programming -->
                 <div class="info-banners">
                     <div id="info-contain">
-                        <p class="info-text">Map made using <a class="info-text" id="github-link" href="https://github.com">Github.com</a> and you can find the source code by <a class="info-text" id="source-link" href="https://github.com/Michael-07Y/Interactive-Map">clicking here!</a></p>
+                        <p class="info-text">Map made using <a class="text-button" href="https://github.com">Github.com</a> and you can find the source code by <a class="text-button" href="https://github.com/Michael-07Y/Interactive-Map">clicking here!</a></p>
                     </div>
                 </div>
+                <!-- Banner used to promote the forum -->
                 <div class="info-banners">
-
+                    <p class="info-text">If you like the project or have any questions you can fill out a forum by <a class="text-button" href="https://forms.gle/EYy1MQUBL3VrkY5S8">clicking here!</a></p>
                 </div>
             </header>
             <section> <!-- Area to hold the map for users to use -->
                 <div id="map-holder">
-                    <img src="/images/map.png">
+                    <img src="/images/map.png" onclick="window.location = '/map/map.html';">
                 </div>
             </section>
         </div>

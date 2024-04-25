@@ -66,38 +66,29 @@ header {
     text-shadow: 3px 3px 0px black, 0 0 10px black;
     overflow: visible;
     text-decoration: none;
+    line-height: 60px;
 }
 
-#github-link {
+.text-button {
     color: rgb(82, 82, 100);
     font-weight: bold;
     text-shadow: 1px 1px 0px white, 0 0 20px gold;
     transition: 0.1s ease;
     overflow: visible;
+    text-decoration: none;
+    cursor: pointer;
 }
 
-#github-link:hover {
+.text-button:hover {
     background-color: black;
-    padding: 5px;
+    padding: 10px;
     color: var(--gold-custom);
     border-radius: 10px;
 }
 
-#source-link { /* Code source styling */
-    color: rgb(82, 82, 100);
-    font-weight: bold;
-    text-shadow: 1px 1px 0px white, 0 0 20px gold;
-    transition: 0.1s ease;
-    overflow: visible;
+.text-button:active {
+    background-color: rgba(0, 0, 0, 0.633);
 }
-
-#source-link:hover {
-    background-color: black;
-    padding: 5px;
-    color: var(--gold-custom);
-    border-radius: 10px;
-}
-
 
 /* Map Section setup */
 section {
@@ -129,4 +120,9 @@ section {
 #map-holder img:hover { /* Changes transform on hover */
     transform: scale(1.05);
     box-shadow: 0 0 40px rgba(0, 0, 0, 0.589);
+}
+
+#map-holder img:active {
+    transform: scale(1.1);
+    transition: 0.05s;
 }

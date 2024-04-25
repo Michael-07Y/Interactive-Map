@@ -1,0 +1,102 @@
+/* Used to reset page and give standard values */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow: none;
+    user-select: none;
+}
+
+/* Body / Background for map */
+body {
+    background-color: rgb(15, 15, 15);
+}
+
+/* Page Container for organization */
+#page-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Map Container to display map and hold locations */
+#map-container {
+    width: 80%;
+    height: 90%;
+    background-image: url(/images/map.png);
+    background-size: cover;
+    background-repeat:no-repeat;
+    border-radius: 20px;
+    box-shadow: 0 0 50px black;
+    border: 2px solid black;
+}
+
+/* Button styling / detailing for the look */
+.location-detail {
+    padding: 15px;
+    background-color: rgba(0, 0, 0, 0.54);
+    border: 1px ridge white;
+    border-radius: 100vw;
+    box-shadow: 0 0 20px black;
+    font-size: 25px;
+    transition: 0.05s;
+    position: absolute;
+    text-align: center;
+    color: white;
+}
+
+.location-detail:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+.location-detail:active {
+    transform: scale(1.15);
+    cursor: pointer;
+    box-shadow: 0 0 10px gold;
+}
+
+/* Egg Location Change */
+#west-egg {
+    right: 47vw;
+    bottom: 25vh;
+}
+
+#east-egg {
+    right: 34vw;
+    top: 45vh;
+}
+
+/* Back Button Change */
+#back-button {
+    left: 2vw;
+    top: 2vh;
+}
+
+/* House Location Change */
+#gatsby-house {
+    left: 40vw;
+    top: 48vh;
+}
+
+#buch-house {
+    right: 36vw;
+    top: 25vh;
+}
+
+#nick-house {
+    left: 43vw;
+    bottom: 36vh;
+}
+
+/* Other Location Changes */
+#valley-ashes {
+    bottom: 22vh;
+    left: 18vw;
+}
+
+#george-garage {
+    bottom: 10vh;
+    left: 23vw;
+}
