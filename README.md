@@ -5,7 +5,7 @@
 | Type | Description |
 | -------- | --------|
 | Creator | [@Michael-07Y](https://github.com/Michael-07Y) |
-| Version | 1.00.01 (BETA)
+| Version | 1.00.04 (BETA)
 | Langauges | HTML/CSS/JS
 | Source | [Click Here!](https://github.com/Michael-07Y/Interactive-Map)
 | Live | [Live Here!](https://michael-07y.github.io/Interactive-Map)
@@ -20,7 +20,7 @@
 
 ## Map Refrence With Commonly Asked Questions
 
-![Map](/images/map.png)
+![Map](/Interactive-Map/imgs/map.png)
 
 ### What is this for?
 
