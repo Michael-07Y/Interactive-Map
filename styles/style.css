@@ -1,128 +1,197 @@
-/* Used to reset page and give standard values */
+/* PAGE RESET */
 * {
     padding: 0;
     margin: 0;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'superS', sans-serif;
     user-select: none;
-    overflow: hidden;
+    overflow: none;
 }
 
-/* :root setup */
-:root {
-    --gold-custom: rgba(168, 149, 84, 1);
+/* CUSTOM FONTS */
+@font-face {
+    font-family: 'superS';
+    src: url('fonts/superSundat.ttf') format('truetype');
 }
 
-/* Body and page container setup */
+/* BODY & PAGE CONTAINER */
 body {
-    background-color: rgb(153, 153, 153);
+    background-color: black;
 }
 
-#page-container { /* Container to hold everything in place [FLEXBOX] */
+.page-container {
     width: 100vw;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
 }
 
-/* Header Section setup */
-header {
-    width: 30%;
-    height: 100%;
-    background-image: linear-gradient(to right, var(--gold-custom), rgb(153, 153, 153));
+/* PAGE SECTIONS */
+.page-sections {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+}
+
+#information-section {
+    width: 30vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, black, white);
+    border-right: 5px solid black;
     gap: 2vh;
 }
 
-.info-banners {
+#map-section {
+    width: 70vw;
+    height: 100vh;
+    background-image: linear-gradient(to top, black, grey);
+    box-shadow: 0px 0px 50px black inset;
+}
+
+/* MAP SECTION */
+.map-holder {
+    width: 100%;
+    height: 70%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.map-holder img {
     width: 90%;
+    height: auto;
+    box-shadow: 0 0 20px black;
+    border-radius: 10px;
+}
+
+/* INFO BANNER */
+.info-banner {
+    width: 100%;
     height: 30%;
-    display: flex;
-    align-items: center;
+    display: flex; 
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 5vh;
+}
+
+.headerTitle {
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 20px black, 2px 2px 0px black;
+    font-size: 3vw;
+    text-align: center;
+    overflow: visible;
+}
+
+.info-buttons {
+    width: 90%;
+    padding: 1vw;
+    font-size: 25px;
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.61), rgba(0, 0, 0, 0.308));
+    color: white;
+    text-shadow: .1vw .1vw 0px grey;
+    border: 2px ridge white;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.718);
+    transition: 0.1s;
+}
+
+.info-buttons:hover {
+    font-size: 30px;
+    cursor: pointer;
+    text-shadow: .1vw .1vw 0px grey, 0 0 1vw gold;
+    background-image: linear-gradient(to top right, rgba(0, 0, 0, 0.74), rgba(0, 0, 0, 0.816));
+    box-shadow: 0 0 20px black, 0 0 20px black inset;
+}
+
+/* MAP BUTTON DECOR */
+.map-button {
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    background-color: transparent;
+    border: none;
+    font-size: 30px;
+    transition: 0.1s;
+    overflow: visible;
+    cursor: pointer;
     text-align: center;
 }
 
-#title-text {
-    font-size: 70px;
-    text-align: center;
-    color: white;
-    text-shadow: 3px 3px 0px black, 0 0 20px black;
-    overflow: visible;
+.map-button:hover {
+    transform: scale(1.2);
 }
 
-#info-contain {
-    width: 80%;
-    height: 100%;
+/* FIX POSITION OF BUTTONS */
+#gatsby-mansion {
+    right: 38vw;
+    top: 47vh;
 }
 
-.info-text {
-    font-size: 34px;
-    color: white;
-    text-shadow: 3px 3px 0px black, 0 0 10px black;
-    overflow: visible;
-    text-decoration: none;
-    line-height: 60px;
+#buch-mansion {
+    right: 33vw;
+    top: 35vh;
 }
 
-.text-button {
-    color: rgb(82, 82, 100);
-    font-weight: bold;
-    text-shadow: 1px 1px 0px white, 0 0 20px gold;
-    transition: 0.1s ease;
-    overflow: visible;
-    text-decoration: none;
-    cursor: pointer;
+#nick-house {
+    right: 37vw;
+    top: 53vh;
 }
 
-.text-button:hover {
-    background-color: black;
-    padding: 10px;
-    color: var(--gold-custom);
+#west-egg {
+    right: 37vw;
+    top: 60vh;
+}
+
+#east-egg {
+    right: 28vw;
+    top: 50vh;
+}
+
+#george-workshop {
+    right: 55vw;
+    top: 65vh;
+}
+
+#valley-ashes {
+    top: 67vh;
+    right: 50vw;
+}
+
+/* Google Form Banner Decor */
+.form-banner {
+    width: 90%;
+    height: 12vh;
+    background-color: rgba(0, 0, 0, 0.667);
+    overflow: hidden;
     border-radius: 10px;
-}
-
-.text-button:active {
-    background-color: rgba(0, 0, 0, 0.633);
-}
-
-/* Map Section setup */
-section {
-    width: 70%;
-    height: 100%;
+    box-shadow: 0 0 40px black;
+    transition: 0.2s;
     display: flex;
     justify-content: center;
     align-items: center;
+    gap: 2vw;
 }
 
-#map-holder { /* Holder for the map and the objects */
-    width: 80%;
-    height: 60%;
-    background-image: linear-gradient(to top right, rgba(94, 94, 94, 0.336), rgba(129, 129, 129, 0.342));
-    box-shadow: 0 0 40px rgba(27, 27, 27, 0.459);
-    border-radius: 10px;
-    overflow:hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-#map-holder img { /* Setup of the Gatsby Map */
-    transition: .5s ease-in-out;
-    cursor: pointer;
-    border-radius: 20px;
-}
-
-#map-holder img:hover { /* Changes transform on hover */
-    transform: scale(1.05);
-    box-shadow: 0 0 40px rgba(0, 0, 0, 0.589);
-}
-
-#map-holder img:active {
+.form-banner:hover {
     transform: scale(1.1);
-    transition: 0.05s;
+    background-color: rgba(0, 0, 0, 0.901);
+    cursor: pointer;
+}
+
+.form-image {
+    width: 90px;
+    height: 90px;
+}
+
+.form-button {
+    width: 70%;
+    padding: 15px;
+    color: white;
+    background-color: black;
+    border: none;
+    border-radius: 10px;
+    font-size: 20px;
+    cursor: pointer;
 }

@@ -1,32 +1,45 @@
 <!DOCTYPE html>
+<!-- FILE VERSION - 1.00.01(BETA) -->
 <html>
-    <head> <!-- Page Setup -->
-        <link rel="stylesheet" type="text/css" href="styles/style.css">
-        <title>| Interactive Map</title>
-        <link rel="icon" href="/images/site-logo.ico">
+    <!-- PAGE SETUP -->
+    <head>
+        <link rel="stylesheet" type="text/css" href="/styles/style.css">
+        <link rel="icon" type="image/x-icon" href="/images/site-logo.ico">
+        <script src="/scripts/script.js"></script>
+        <title>| Home</title>
     </head>
-    <body> <!-- Body Setup -->
-        <div id="page-container"> <!-- Page Container for page alignment -->
-            <header> <!-- Site header to explain info -->
-                <div class="info-banners">
-                    <h1 id="title-text">Interactive Gatsby Map</h1>
+    <!-- BODY SETUP -->
+    <body>
+        <div class="page-container">
+            <div class="page-sections" id="information-section">
+                <div class="info-banner">
+                    <h1 class="headerTitle">Interactive Map The Great Gatsby</h1>
                 </div>
-                <!-- Banner used to link the source code and promote github for the programming -->
-                <div class="info-banners">
-                    <div id="info-contain">
-                        <p class="info-text">Map made using <a class="text-button" href="https://github.com">Github.com</a> and you can find the source code by <a class="text-button" href="https://github.com/Michael-07Y/Interactive-Map">clicking here!</a></p>
+                <!-- BUTTONS TO SOURCE CODE AND MY PROFILE -->
+                <div class="info-banner">
+                    <button class="info-buttons" onclick="window.location.replace('https://github.com/Michael-07Y/Interactive-Map?tab=readme-ov-file')">Source Code</button>
+                    <button class="info-buttons" onclick="window.location.replace('https://github.com/Michael-07Y')">My Profile</button>
+                </div>
+                <div class="info-banner">
+                    <div class="form-banner">
+                        <img class="form-image" src="/images/formLogo.png">
+                        <button class="form-button" onclick="window.location.replace('https://docs.google.com/forms/d/e/1FAIpQLSfedcVucM0Q3OoL_ttxN9I5Qnet7STEnLs8pgmaHvpnFwzOQw/viewform')">Google Review/Questions!</button>
                     </div>
                 </div>
-                <!-- Banner used to promote the forum -->
-                <div class="info-banners">
-                    <p class="info-text">If you like the project or have any questions you can fill out a forum by <a class="text-button" href="https://forms.gle/EYy1MQUBL3VrkY5S8">clicking here!</a></p>
+            </div>
+            <div class="page-sections" id="map-section">
+                <div class="map-holder">
+                    <img src="images/map.png" draggable="false">
+                    <!-- MAP BUTTONS -->
+                    <button class="map-button" id="gatsby-mansion" onclick="mapSelect(4)">🏡</button>
+                    <button class="map-button" id="buch-mansion" onclick="mapSelect(5)">🏡</button>
+                    <button class="map-button" id="nick-house" onclick="mapSelect(3)">🏠</button>
+                    <button class="map-button" id="west-egg" onclick="mapSelect(2)">🥚</button>
+                    <button class="map-button" id="east-egg" onclick="mapSelect(1)">🥚</button>
+                    <button class="map-button" id="george-workshop" onclick="mapSelect(7)">🚗</button>
+                    <button class="map-button" id="valley-ashes" onclick="mapSelect(6)">💨</button>
                 </div>
-            </header>
-            <section> <!-- Area to hold the map for users to use -->
-                <div id="map-holder">
-                    <img src="images/map.png" onclick="window.location = 'map/map.html';">
-                </div>
-            </section>
+            </div>
         </div>
     </body>
 </html>

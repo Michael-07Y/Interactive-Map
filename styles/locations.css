@@ -1,0 +1,133 @@
+/* PAGE RESET */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'superS', sans-serif;
+    user-select: none;
+    overflow: none;
+}
+
+/* BACK BUTTON */
+.back-button {
+    width: 3vw;
+    height: 75vh;
+    position: absolute;
+    background-color: black;
+    border-radius: 100vw;
+    border: none;
+    top: 15vh;
+    left: 1vw;
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.back-button:hover {
+    background-color: rgba(255, 255, 255, 0.336);
+}
+
+/* CUSTOM FONTS */
+@font-face {
+    font-family: 'superS';
+    src: url('fonts/superSundat.ttf') format('truetype');
+}
+
+/* BODY & PAGE CONTAINER */
+body {
+    background-color: black;
+}
+
+.page-container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* INFORMATION SECTIONS */
+.info-sections {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 3vh;
+}
+
+#decor-back {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.742), rgba(151, 151, 162, 0.655));
+    border-left: 2px ridge white;
+    box-shadow: -2px 0px 20px rgba(255, 255, 255, 0.499);
+}
+
+/* IMAGE SECTOR DECOR */
+.location-image {
+    width: 50%;
+    height: auto;
+    border-radius: 20px;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.641);
+}
+
+/* INFO BANNER DECOR */
+.info-banners {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2vh;
+}
+
+.banner-title {
+    color: white;
+    text-shadow: .1vw .1vw 0px grey;
+    text-align: center;
+    padding: 10px;
+    font-size: 30px;
+    border-bottom: 2px ridge black;
+    border-radius: 10px;
+}
+
+#super-title {
+    font-size: 50px;
+    text-shadow: .2vw .2vw 0px grey;
+}
+
+.banner-description {
+    color: white;
+    width: 60%;
+    height: auto;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* CHARACTER HOLDER */
+.character-holder {
+    width: 90%;
+    height: 10vh;
+    overflow: hidden;
+    background-color: rgba(0, 0, 0, 0.684);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 20px;
+    box-shadow: 0 0 20px black;
+}
+
+.char-image {
+    width: 70px;
+    height: 70px;
+    border-radius: 100vw;
+    border: 1px solid white;
+    object-fit: cover;
+}
+
+.character-holder h2 {
+    color: rgb(126, 126, 126);
+    font-size: 20px;
+}

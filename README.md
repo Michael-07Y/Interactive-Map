@@ -5,18 +5,18 @@
 | Type | Description |
 | -------- | --------|
 | Creator | [@Michael-07Y](https://github.com/Michael-07Y) |
-| Version | 0.00.01 (Startup)
+| Version | 1.00.01 (BETA)
 | Langauges | HTML/CSS/JS
 | Source | [Click Here!](https://github.com/Michael-07Y/Interactive-Map)
 | Live | [Live Here!](https://michael-07y.github.io/Interactive-Map)
 
 ## Project Checklist
 
-- [ ] Code is organized
-- [ ] All lines are commented as needed
-- [ ] Any tests do not produce errors
-- [ ] Code is displayed as it should
-- [ ] Project is complete
+- [x] Code is organized
+- [x] All lines are commented as needed
+- [x] Any tests do not produce errors
+- [x] Code is displayed as it should
+- [x] Project is complete
 
 ## Map Refrence With Commonly Asked Questions
 
