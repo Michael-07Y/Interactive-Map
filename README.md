@@ -20,7 +20,7 @@
 
 ## Map Refrence With Commonly Asked Questions
 
-![Map](/Interactive-Map/imgs/map.png)
+![Map](https://michael-07y.github.io/Interactive-Map/imgs/map.png)
 
 ### What is this for?
 
