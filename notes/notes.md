@@ -11,7 +11,7 @@
 - [x] Completed georges garage
 - [x] Finalized the code to make sure it fits final checklist
 - [x] Project submitted
-- [ ] Project graded
+- [x] Project graded
 
 ## Final Date of Completion With Timestamp:
 
@@ -21,4 +21,4 @@
 >
 > Project Submission - **( 04/30/2024 )**
 >
-> Project Grade - **( NOT RECIEVED )**
+> Project Grade - **100% W!**
